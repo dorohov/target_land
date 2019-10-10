@@ -21,7 +21,7 @@
                         <pre class="is--ruble">&#8381;</pre>
                     </div>
                     <div class="yd-block-on__left__btn">
-                        <a href="#mform" class="yd-btn yd-anchor">Заказать</a>
+                        <a href="#mform" class="yd-btn yd-modal">Заказать</a>
                     </div>
                 </div>
                 <div class="yd-block-on__right">
@@ -75,6 +75,9 @@
                         <div class="yd-block-th__line__text is--yd--c-pl">
                             <div class="yd-block-th__line__text__title">Продвижение <br> в интернете</div>
                             <div class="yd-block-th__line__text__desc">Рекламные кампании по контекстной рекламе и РСЯ являются <br> лучшими методами продвижения в интернете на данный момент. <br> Реклама позволяет охватить наибольшее количество «горячих» <br> клиентов в вашем регионе.</div>
+                            <div class="yd-block-th__line__text__btn">
+                                <a href="#mform" class="yd-btn yd-modal is--gr">Заказать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,6 +89,9 @@
                         <div class="yd-block-th__line__text is--yd--c-pl">
                             <div class="yd-block-th__line__text__title">Стоимость <br> контекстной рекламы</div>
                             <div class="yd-block-th__line__text__desc">Стоимость контекстной рекламы без акции варьируется <br> и начинается от ***** рублей. В рамках акции мы предоставляем <br> комплексную настройку от профессиональной веб-студии. </div>
+                            <div class="yd-block-th__line__text__btn">
+                                <a href="#mform" class="yd-btn yd-modal is--gr">Заказать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,6 +103,9 @@
                         <div class="yd-block-th__line__text is--yd--c-pl">
                             <div class="yd-block-th__line__text__title">Высокое качество <br> услуг</div>
                             <div class="yd-block-th__line__text__desc">Среди наших клиентов имелись как масштабные проекты, <br> так и начинающие стартапы. Благодаря нашей работе они <br> достигли наилучших показателей в интернет-рекламе.</div>
+                            <div class="yd-block-th__line__text__btn">
+                                <a href="#mform" class="yd-btn yd-modal is--gr">Заказать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,6 +118,9 @@
                 <div class="yd-block-fo__link">
                     <a href="https://dorohov.design/portfolio/" target="_blank">//dorohov.design/portfolio</a>
                 </div>
+                <div class="yd-block-fo__btn">
+                    <a href="#mform" class="yd-btn yd-modal is--white">Заказать</a>
+                </div>
                 <div class="yd-block-fo__mock">
                     <img src="img/b4mock.png" alt="">
                 </div>
@@ -120,6 +132,9 @@
                 <div class="yd-block-fo__desc">За 4 месяца проделанной работы контекстной рекламы в Яндекс.Директ <br> увеличилось количество кликов в 5 раз, CTR объявлений вырос с 4% до <br> 10%, увеличился охват более чем в 3 раза, стоимость клика уменьшилась <br> с 39.20 р. до 15.99 р.</div>
                 <div class="yd-block-fo__link">
                     <a href="https://dorohov.design/portfolio/" target="_blank">//dorohov.design/portfolio</a>
+                </div>
+                <div class="yd-block-fo__btn">
+                    <a href="#mform" class="yd-btn yd-modal is--gr">Заказать</a>
                 </div>
                 <div class="yd-block-fo__mock">
                     <img src="img/b5mock.png" alt="">
@@ -153,7 +168,40 @@
             </div>
         </div>
     </main>
+    <div class="modal-land" id="modal_form">
+        <a href="#" rel="modal:close" class="is--close"></a>
+        <div class="yd-block-sx__heading" style="margin-bottom: 30px;">
+            <div class="yd-block-sx__heading__text">Настройка рекламной <br> кампании</div>
+            <div class="yd-block-sx__heading__sub">Вам на выбор будет предоставлены несколько вариантов по продвижению вашего бизнеса в вашем регионе и получению «горячих» клиентов.</div>
+        </div>
+        <form class="yd-block-sx__form">
+            <div class="yd-block-sx__form__field">
+                <input type="text" required placeholder="Имя">
+            </div>
+            <div class="yd-block-sx__form__field">
+                <input type="text" required placeholder="Телефон">
+            </div>
+            <div class="yd-block-sx__form__field">
+                <input type="email" required placeholder="Почта">
+            </div>
+            <div class="yd-block-sx__form__submit" style="padding-top: 0; text-align: left;">
+                <button class="yd-btn">Заказать</button>
+                <div class="yd-block-sx__form__submit__cop">
+                    Нажимая на кнопку «Отправить», Вы соглашаетесь <br>
+                    с <a href="#">политикой обработки персональных данных</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-land is--xs" id="modal_success">
+        <a href="#" rel="modal:close" class="is--close"></a>
+        <div class="yd-block-sx__heading" style="margin-bottom: 0px;">
+            <div class="yd-block-sx__heading__text">Ваша заявка <br> отправлена!</div>
+            <div class="yd-block-sx__heading__sub">В ближайшее время с Вами <br> свяжутся</div>
+        </div>
+    </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/jquery.modal.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>
 
